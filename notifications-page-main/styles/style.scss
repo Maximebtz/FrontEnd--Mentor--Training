@@ -38,6 +38,7 @@ body {
     max-height: 800px;
     border-radius: 15px;
     padding: 30px 25px 10px 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
     .top {
         display: flex;
         justify-content: space-between;
@@ -126,6 +127,7 @@ body {
                 color: #999ba3c1;
                 transition: all 0.2s ease-in-out;
                 padding: 20px;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.03);
                 &:hover {
                     color: #042D74;
                     border: solid 1px #999ba300;
