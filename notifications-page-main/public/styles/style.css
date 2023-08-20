@@ -23,7 +23,9 @@ body {
   overflow: hidden;
   position: relative;
   background-color: #FFFFFF;
-  width: 40%;
+  max-width: 750px;
+  min-width: 450px;
+  width: auto;
   height: 800px;
   min-height: 700px;
   max-height: 800px;
@@ -74,8 +76,10 @@ body {
   width: 1px;
 }
 .wrapper .notifications .notification {
+  margin-bottom: 5px;
   display: flex;
   padding: 15px;
+  transition: all 0.2s ease-in-out;
 }
 .wrapper .notifications .notification img {
   width: 15%;
@@ -125,6 +129,29 @@ body {
   color: #042D74;
   border: solid 1px rgba(153, 155, 163, 0);
   background-color: #E5EFF9;
+}
+.wrapper .notifications .notification:hover {
+  -webkit-backdrop-filter: brightness(98%);
+          backdrop-filter: brightness(98%);
+}
+.wrapper .notifications .not-read {
+  background-color: #F6FAFD;
+}
+.wrapper .notifications .not-read p {
+  position: relative;
+}
+.wrapper .notifications .not-read p::after {
+  content: "";
+  background-color: #EF555B;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  bottom: 9px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+.wrapper .notifications .not-read:hover {
+  background-color: transparent;
 }
 
 /************** Footer *************/
